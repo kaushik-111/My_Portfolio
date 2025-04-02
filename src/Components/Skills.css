@@ -1,0 +1,223 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'); /* Include Font Awesome */
+
+.skills {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skl {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.sklLine {
+  margin: 5px 0;
+  color: #555;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.ProgWidth {
+  margin: 20px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  animation: zoomIn 1.2s ease;
+}
+
+.p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  flex: 0 0 30%;
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease;
+}
+
+.p i {
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.p:hover i {
+  transform: scale(1.2);
+  color: #000;
+}
+
+/* Add specific colors for each icon */
+.p .fa-html5 {
+  color: #f06529;
+}
+
+.p .fa-css3-alt {
+  color: #2965f1;
+}
+
+.p .fa-mobile-alt {
+  color: #e91e63;
+}
+
+.p .fa-code {
+  color: #0769ad;
+}
+
+.p .fa-bootstrap {
+  color: #563d7c;
+}
+
+.p .fa-js-square {
+  color: #f7df1e;
+}
+
+.p .fa-react {
+  color: #61dafb;
+}
+
+.p .fa-node-js {
+  color: #83cd29;
+}
+
+.p .fa-server {
+  color: #888888;
+}
+
+.p .fa-database {
+  color: #00758f;
+}
+
+.p .fa-leaf {
+  color: #4db33d;
+}
+
+.pp {
+  background: linear-gradient(to right, #f9f9f9, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex: 1;
+}
+
+.skillDiv {
+  width: 100%;
+  height: 25px;
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.skillBar {
+  display: block;
+  height: 100%;
+  border-radius: 12px;
+  animation: growBar 2.5s ease-in-out forwards, zoomBar 1s ease-in-out;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform-origin: left;
+}
+
+.htmlBar {
+  background: linear-gradient(to right, #f06529, #f09a73);
+}
+
+.cssBar {
+  background: linear-gradient(to right, #2965f1, #73a9f1);
+}
+
+.mqBAr {
+  background: linear-gradient(to right, #e91e63, #f48fb1);
+}
+
+.jqBar {
+  background: linear-gradient(to right, #0769ad, #5ea9d6);
+}
+
+.bsBar {
+  background: linear-gradient(to right, #563d7c, #8464a7);
+}
+
+.jspBar {
+  background: linear-gradient(to right, #f7df1e, #f9eb73);
+}
+
+.reactBar {
+  background: linear-gradient(to right, #61dafb, #a6efff);
+}
+
+.nodeBar {
+  background: linear-gradient(to right, #83cd29, #b4e97d);
+}
+
+.esBar {
+  background: linear-gradient(to right, #888888, #bbbbbb);
+}
+
+.sqlBar {
+  background: linear-gradient(to right, #00758f, #5bb9d9);
+}
+
+.mdBar {
+  background: linear-gradient(to right, #4db33d, #81e77a);
+}
+
+/* Keyframes for animations */
+@keyframes growBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes zoomBar {
+  0% {
+    transform: scaleX(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
